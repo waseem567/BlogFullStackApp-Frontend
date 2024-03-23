@@ -1,0 +1,297 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Protest+Guerrilla&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Broken+Fax&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+  /* background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1689750064976/11a6362e-9ce8-4a93-b34d-652a7d4cb768.png?auto=format,compress) ; */
+  overflow-x: hidden;
+  background-color: rgb(245, 245, 245);
+}
+.bg-com__card {
+  background: rgba(242, 245, 255, 0.3);
+}
+.bg-community {
+  background: radial-gradient(
+    circle,
+    rgb(170, 189, 245) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.rubik-broken {
+  font-family: "Rubik Broken Fax", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* limit p tag to 5 lines */
+.text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+          line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.protest-guerrilla-regular {
+  font-family: "Protest Guerrilla", sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal;
+}
+.protest-revolution-regular {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-strt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.navbar-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (min-width: 900px) {
+  .grid-home {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
+  }
+  .grid-inner {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .not {
+    display: none !important;
+  }
+  .grid-home {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr !important;
+  }
+  .grid-inner {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .grid-home {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .side_bar {
+    position: absolute;
+    left: -103%;
+    top: 56px;
+    overflow: hidden;
+    height: max-content;
+  }
+}
+.side_bar_open {
+  left: 0;
+}
+.responsive_show {
+  display: none;
+}
+.responsive_hide {
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .responsive_hide {
+    display: none !important;
+  }
+  .responsive_show {
+    display: flex !important;
+  }
+}
+
+.post::before {
+  content: open-quote;
+  font-size: 40px;
+  font-weight: 700;
+  display: block;
+  max-width: max-content;
+}
+.post::after {
+  content: close-quote;
+  font-size: 40px;
+  font-weight: 700;
+  display: block;
+  max-width: max-content;
+  margin-left: auto;
+}
+.grid-pending {
+  grid-template-columns: 2fr 1fr;
+}
+/* button animation */
+.btn:hover .btn-span,
+.btn:hover .arrow {
+  animation-name: btnSpan;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btnSpan {
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    display: 0;
+  }
+}
+/* not found */
+
+/* loading styles */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/* heart loading */
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+  margin: auto;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: red;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: red;
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

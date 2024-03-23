@@ -1,63 +1,36 @@
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-```markdown
-# 🚀 Full-Stack Blog App
+## Getting Started
 
-Welcome to my full-stack blog application! This project is built using Next.js for the frontend and Nest.js for the backend.
+First, run the development server:
 
-## 📖 Overview
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-This blog app is designed to provide a seamless and enjoyable experience for both readers and writers. The frontend, powered by Next.js, ensures a fast and responsive user interface, while the backend, built with Nest.js, offers a robust and scalable server.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🛠️ Tech Stack
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Frontend:** Next.js
-- **Backend:** Nest.js
-- **Database:** MongoDB
-- **Authentication:** JWT
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## 🚧 Setup Instructions
+## Learn More
 
-1. Clone the repository:
+To learn more about Next.js, take a look at the following resources:
 
-   ```bash
-   git clone https://github.com/your-username/full-stack-blog-app.git
-   ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-2. Install dependencies:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-   ```bash
-   cd full-stack-blog-app
-   npm install
-   ```
+## Deploy on Vercel
 
-3. Configure the backend:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-   - Navigate to the `backend` directory.
-   - Follow the instructions in the backend README to set up your environment variables and database.
-
-4. Run the application:
-
-   ```bash
-   npm run dev
-   ```
-
-   Open your browser and go to [http://localhost:3000](http://localhost:3000).
-
-## 🖼️ Screenshots
-
-### Admin Account
-![Screenshot 2024-03-12 121715](https://github.com/waseem567/BlogFullStackApp-NEXT-NEST-/assets/90834559/b360fea4-1a4e-40c1-a986-11746c5e8bfb)
-
-
-### Writer Account
-![Screenshot 2024-03-12 121914](https://github.com/waseem567/BlogFullStackApp-NEXT-NEST-/assets/90834559/007d3f4f-47f3-4281-ba2d-baf562f5f15e)
-
-
-## 🌐 Live Demo
-
-Explore the live demo of the blog app [here](https://blog-next-js-ruby-gamma.vercel.app/).
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues and submit pull requests.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
